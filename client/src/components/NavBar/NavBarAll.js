@@ -1,8 +1,6 @@
 import React from "react";
 import logo from "./orange-logo.png";
 import "./NavBar.css";
-import "../boosted/css/boosted.min.css";
-import "../boosted/js/boosted.bundle.min.js";
 import { useLocation } from "react-router-dom";
 //import NavBarIssuer from "./NavBarIssuer";
 
@@ -51,16 +49,8 @@ export default function NavBarAll() {
                   Home
                 </a>
               </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link ${
-                    location.pathname === "/register" ? "active" : ""
-                  }`}
-                  href="/register"
-                >
-                  Register
-                </a>
-              </li>
+              
+              
               <li className="nav-item">
                 <a
                   className={`nav-link ${

@@ -8,6 +8,8 @@ const BranchSchema = new Schema({
   location: String,
   legitimizedFromIssuer: String,
   acceptedFromHolder: String,
+  longitude: String,
+  latitude: String,
 });
 
 const Branch = mongoose.model("Branch", BranchSchema);

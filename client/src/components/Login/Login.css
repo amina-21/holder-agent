@@ -1,8 +1,19 @@
 .formDisplay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.account-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account-div img {
+  margin-right: 10px;
+}
+.btnDisplay{
+  text-align:center ;
+}

@@ -10,7 +10,7 @@ export default function NavbarHolder() {
 
   function handleLogout() {
     axios
-      .post("http://localhost:3007/logout")
+      .post("http://localhost:3008/logout")
       .then(() => {
         // Clear session storage
         sessionStorage.removeItem("username");
@@ -18,6 +18,7 @@ export default function NavbarHolder() {
 
         // Redirect to the login page
         navigate("/login");
+        window.location.reload()
       })
       .catch((err) => console.log(err));
   }
@@ -64,15 +65,15 @@ export default function NavbarHolder() {
               <li className="nav-item active">
                 <a
                   className={`nav-link ${
-                    location.pathname === "/" ? "active" : ""
+                    location.pathname === "/holder-home" ? "active" : ""
                   }`}
-                  href="/"
+                  href="/holder-home"
                   aria-current="page"
                 >
                   Home Holder
                 </a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   className={`nav-link ${
                     location.pathname === "/create-invitation" ? "active" : ""
@@ -81,11 +82,11 @@ export default function NavbarHolder() {
                 >
                   Create Invitation
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a
                   className={`nav-link ${
-                    location.pathname === "/view-invitations" ? "active" : ""
+                    location.pathname === "/view-invitation-holder" ? "active" : ""
                   }`}
                   href="/view-invitation-holder"
                 >
